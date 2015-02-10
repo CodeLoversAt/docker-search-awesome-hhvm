@@ -40,4 +40,4 @@ cp /www/app/config/parameters_base.yml /www/app/config/parameters.yml
 
 # run HHVM
 cd /www/web
-hhvm --mode server -vServer.Port=9000 -vServer.Type=fastcgi
+sudo -u www-data hhvm --mode server -vServer.Port=9000 -vServer.Type=fastcgi

@@ -19,6 +19,6 @@ ADD run.sh /home/www-data/run.sh
 RUN chown -R www-data:www-data /home/www-data
 RUN chown -R www-data:www-data /home/www-data/run.sh
 
-ENTRYPOINT ["sudo", "-u", "www-data", "/home/www-data/run.sh"]
+ENTRYPOINT ["/home/www-data/run.sh"]
 
 EXPOSE 9000

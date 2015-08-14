@@ -34,7 +34,7 @@ sed -i "s@mongo_database: search_awesome_app@mongo_database: ${MONGO_DATABASE}@"
 sed -i "s@delivery_address: null@delivery_address: ${DELIVERY_ADDRESS}@" /www/app/config/parameters_base.yml
 sed -i "s@recaptcha_public_key: null@recaptcha_public_key: ${RECAPTCHA_PUBLIC_KEY}@" /www/app/config/parameters_base.yml
 sed -i "s@recaptcha_private_key: null@recaptcha_private_key: ${RECAPTCHA_PRIVATE_KEY}@" /www/app/config/parameters_base.yml
-sed -i "s@recaptcha_session_key: _recaptcha_valid@_recaptcha_valid: ${RECAPTCHA_SESSION_KEY}@" /www/app/config/parameters_base.yml
+sed -i "s@recaptcha_session_key: _recaptcha_valid@recaptcha_session_key: ${RECAPTCHA_SESSION_KEY}@" /www/app/config/parameters_base.yml
 
 cp /www/app/config/parameters_base.yml /www/app/config/parameters.yml
 
